@@ -3,6 +3,10 @@
 [中文简介](#简介) | [English](#Introduction)
 
 ### 结果 | Result
+- GoogLeNet training (Backbone Only):
+<img width="2480" height="1914" alt="googlenet_training_curve" src="https://github.com/user-attachments/assets/32a4819a-8e1c-476c-b243-356546bbbce9" />
+
+- GoogLeNet:
 
 
 
