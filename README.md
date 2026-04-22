@@ -7,6 +7,7 @@
 <img width="2480" height="1914" alt="googlenet_training_curve" src="https://github.com/user-attachments/assets/32a4819a-8e1c-476c-b243-356546bbbce9" />
 
 - GoogLeNet:
+<img width="2480" height="1914" alt="googlenet_training_curve (1)" src="https://github.com/user-attachments/assets/48f99bc8-36b7-40c5-88b2-c9abfb70a7a2" />
 
 
 由于网络非常深，训练非常耗时，仅以20轮作为观看，但其并未完全收敛，可自行增大epoch，让其完全收敛进行测试，这里结果仅对比带上辅助分类器的效果（未来的网络其实已取消了这个功能，仅作为复现学习思维模型），辅助分类器是为了解决梯度消失问题的，但其实加上也可能会导致出现梯度消失问题，所以GoogLeNet对于调参来说非常重要。
