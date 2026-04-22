@@ -23,7 +23,7 @@ GoogLeNet的核心架构为**多分支堆叠式深度神经网络**，整体由*
 <img width="414" height="625" alt="image" src="https://github.com/user-attachments/assets/37c3eaa9-7513-4466-b9f1-c075d6664e4e" />
 <img width="839" height="288" alt="image" src="https://github.com/user-attachments/assets/c2502f38-b384-4849-b1df-4671685e0904" />
 
-
+如果你想看更详细的模型解答可以观看：https://developer.aliyun.com/article/1062593
 
 **注意**：我们使用的是数据集CIFAR-10，它是10类数据，并且不同于原文献，由于CIFAR-10图像尺寸（32×32）远小于原论文的224×224，我们会对网络结构做微小适配（主要是调整前几层卷积核和步长，移除过早的池化层，修改辅助分类器全连接层输入维度），但核心架构（Inception多分支模块 + 辅助分类器 + 全局平均池化）完全保留。
 
@@ -32,6 +32,7 @@ GoogLeNet的核心架构为**多分支堆叠式深度神经网络**，整体由*
 数据集链接为：https://www.cs.toronto.edu/~kriz/cifar.html
 
 它不同于我们常见的图片存储格式，而是用二进制优化了储存，当然我们也可以将其复刻出来为PNG等图片格式，但那会很大，我们的目标是神经网络，这里不做细致解析数据集，如果你想了解该数据集请观看链接：https://cloud.tencent.com/developer/article/2150614
+
 
 ---
 
