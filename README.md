@@ -3,7 +3,7 @@
 [中文简介](#简介) | [English](#Introduction)
 
 ### 结果 | Result
-<img width="2480" height="1914" alt="googlenet_training_curve" src="https://github.com/user-attachments/assets/5468d75f-699c-48e0-aac6-94fd686283d3" />
+
 
 
 ---
@@ -19,9 +19,10 @@ GoogLeNet的核心架构为**多分支堆叠式深度神经网络**，整体由*
 
 该架构通过多尺度特征融合实现了高效的特征表达，在保持高性能的同时极大地降低了计算复杂度，其"用计算效率换网络深度"的设计思想成为了现代深度学习模型的重要准则。
 
-<img width="1221" height="465" alt="googlenet_architecture_overview" src="https://github.com/user-attachments/assets/a919e7e9-847e-4144-a5ec-43d68edb89e1" />
-<img width="989" height="739" alt="inception_module_detail" src="https://github.com/user-attachments/assets/24852013-3606-428f-865a-a1c2da53fbc2" />
-<img width="461" height="171" alt="googlenet_param_comparison" src="https://github.com/user-attachments/assets/3e71abf2-9657-405c-98cf-83894645f7b0" />
+<img width="1122" height="2983" alt="image" src="https://github.com/user-attachments/assets/77ed8ef8-2178-44e9-ac75-c474c59228cf" />
+<img width="414" height="625" alt="image" src="https://github.com/user-attachments/assets/37c3eaa9-7513-4466-b9f1-c075d6664e4e" />
+<img width="839" height="288" alt="image" src="https://github.com/user-attachments/assets/c2502f38-b384-4849-b1df-4671685e0904" />
+
 
 
 **注意**：我们使用的是数据集CIFAR-10，它是10类数据，并且不同于原文献，由于CIFAR-10图像尺寸（32×32）远小于原论文的224×224，我们会对网络结构做微小适配（主要是调整前几层卷积核和步长，移除过早的池化层，修改辅助分类器全连接层输入维度），但核心架构（Inception多分支模块 + 辅助分类器 + 全局平均池化）完全保留。
@@ -46,9 +47,10 @@ The core architecture of GoogLeNet is a **multi-branch stacked deep neural netwo
 
 This architecture achieves efficient feature expression through multi-scale feature fusion, and greatly reduces computational complexity while maintaining high performance. Its design idea of "trading computational efficiency for network depth" has become an important criterion for modern deep learning models.
 
-<img width="1221" height="465" alt="googlenet_architecture_overview" src="https://github.com/user-attachments/assets/3b43a063-c09c-4749-acb9-79efdafcf260" />
-<img width="866" height="744" alt="inception_module_detail" src="https://github.com/user-attachments/assets/db6cd628-8c78-4b9e-800e-4c6514c33bdd" />
-<img width="461" height="171" alt="googlenet_param_comparison" src="https://github.com/user-attachments/assets/ed1097d0-8df5-4878-bd05-2687a7dde9b6" />
+<img width="1122" height="2983" alt="image" src="https://github.com/user-attachments/assets/eee194b0-6b69-4be4-adc0-0f41a816031c" />
+<img width="724" height="251" alt="image" src="https://github.com/user-attachments/assets/f7a7aa9a-b9f1-40b6-895c-d412de44a8c1" />
+<img width="824" height="275" alt="image" src="https://github.com/user-attachments/assets/f3625d95-7a4f-4d5e-865a-6839600bcd25" />
+
 
 
 **Note:** We use the CIFAR-10 dataset, which is a 10-class dataset. Unlike the original paper, the image size of CIFAR-10 (32×32) is much smaller than the 224×224 in the original paper. We will make minor adaptations to the network structure (mainly adjusting the convolution kernels and strides of the first few layers, removing premature pooling layers, and modifying the input dimensions of the auxiliary classifier's fully connected layers), but the core architecture (Inception multi-branch module + auxiliary classifier + global average pooling) will be completely retained.
